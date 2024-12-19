@@ -11,7 +11,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator(3, 5);
         // 3 + 5 = 8, what is the third parameter?
         // 3.0 + 5.0 = 8.0 with a precision of 0.001
-        assertEquals(2, calculator.add(), 0.001);
+        assertEquals(8, calculator.add(), 0.001);
         
         calculator = new Calculator(0, 0);
         // 0 + 0 = 0 with a precision of 0.001
