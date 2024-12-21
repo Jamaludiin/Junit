@@ -24,6 +24,8 @@ public class SimpleMethods {
         return score;
     }
 
+   
+
     // get score in char format
     public char getGrade() {
         if (score >= 90) {

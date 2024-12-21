@@ -14,6 +14,7 @@ public class SimpleMethodsTest {
         assertEquals(95, simpleMethods.getScore());
     }   
 
+    // positive test
     @Test
     public void testGetGradeA() {
         simpleMethods = new SimpleMethods();
@@ -21,6 +22,7 @@ public class SimpleMethodsTest {
         assertEquals('A', simpleMethods.getGrade());
     }
 
+    // positive test
     @Test
     public void testSetScore() {
         simpleMethods = new SimpleMethods();
@@ -28,6 +30,7 @@ public class SimpleMethodsTest {
         assertEquals(95, simpleMethods.getScore());
     }
 
+    // negative test
     @Test
     public void testGetGradeAallRange() {
         simpleMethods = new SimpleMethods();
@@ -41,6 +44,7 @@ public class SimpleMethodsTest {
         
     }
 
+    // positive test
     @Test
     public void testGetGradeCallRange() {
         simpleMethods = new SimpleMethods();
@@ -52,12 +56,36 @@ public class SimpleMethodsTest {
     }
 
 
+    // positive test
     @Test
     public void testGetGradeDRange() {
         simpleMethods = new SimpleMethods();
         for (int i = 60; i < 70; i++) {
             simpleMethods.setScore(i);
             assertEquals('D', simpleMethods.getGrade());
+        }
+        
+    }
+
+     // negative test
+     @Test
+     public void testGetGradeFailRange() {
+         simpleMethods = new SimpleMethods();
+         for (int i = 0; i <= 60; i++) {
+             simpleMethods.setScore(i);
+             assertEquals('F', simpleMethods.getGrade());
+         }
+         
+     }
+
+    // poor design test, it always pass because the condition is always true
+    @Test
+    public void testGetGradeDRangeNegative() {
+        simpleMethods = new SimpleMethods();
+        for (int i = 1; i < 101; i++) {
+            simpleMethods.setScore(i);
+            char g = simpleMethods.getGrade();// bad design
+            assertEquals(g, simpleMethods.getGrade());
         }
         
     }
