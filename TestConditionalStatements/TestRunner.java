@@ -16,3 +16,6 @@ public class TestRunner {
       System.out.println(result.wasSuccessful());
    }
 }  
+
+
+// verify the output. if the test is successful, the output will be true and if the test or some test case is not successful, the output will be false
