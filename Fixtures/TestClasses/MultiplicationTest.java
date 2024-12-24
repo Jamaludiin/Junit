@@ -14,8 +14,8 @@ public class MultiplicationTest {
     // This method runs before every test
     @Before
     public void setUp() {
-        k = 2;
-        l = 3;
+        k = 1;
+        l = 2;
     }
 
     // This method runs after every test
