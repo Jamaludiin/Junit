@@ -45,5 +45,18 @@ public class TestAssertTrue {
         car.setModel("Camry");
         car.display();
     }
+
+    @Test
+    public void testAssertTrue() {
+        Car car = new Car();
+        car.setName("Toyota");
+        assertTrue(car.getName() != null);
+    }
+
+    @Test
+    public void testAgeGraeterThan18() {
+        int age = 19;
+        assertTrue(age > 18);
+    }
 }
 
