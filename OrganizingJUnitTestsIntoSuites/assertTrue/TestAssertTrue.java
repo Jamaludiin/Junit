@@ -42,7 +42,7 @@ public class TestAssertTrue {
     public void testDisplay() {
         Car car = new Car();
         car.setName("Toyota");
-        car.setModel("Camry");
+        car.setModel("BMW");
         car.display();
     }
 
