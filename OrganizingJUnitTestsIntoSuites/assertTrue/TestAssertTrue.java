@@ -34,5 +34,14 @@ public class TestAssertTrue {
         // test pass if both arguments are not null and are equal
         // if he returns false, the test fails
     }
+
+    // test the display method
+    @Test
+    public void testDisplay() {
+        Car car = new Car();
+        car.setName("Toyota");
+        car.setModel("Camry");
+        car.display();
+    }
 }
 

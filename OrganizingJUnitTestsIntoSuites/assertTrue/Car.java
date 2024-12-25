@@ -31,4 +31,9 @@ public class Car {
     public void display() {
         System.out.println("Car: " + name + " " + model );
     }
+
+    public void display2() {
+        System.out.println("Name: " + name);
+        System.out.println("Model: " + model);
+    }
 }
