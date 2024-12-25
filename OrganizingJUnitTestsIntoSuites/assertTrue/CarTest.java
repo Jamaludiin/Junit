@@ -2,6 +2,9 @@ package OrganizingJUnitTestsIntoSuites.assertTrue;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
+
+import OrganizingJUnitTestsIntoSuites.Car;
+
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 

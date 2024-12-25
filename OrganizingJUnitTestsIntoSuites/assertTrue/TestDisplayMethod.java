@@ -2,6 +2,8 @@ package OrganizingJUnitTestsIntoSuites.assertTrue;
 
 import org.junit.Test;
 
+import OrganizingJUnitTestsIntoSuites.Car;
+
 public class TestDisplayMethod {
 
      // test the display method

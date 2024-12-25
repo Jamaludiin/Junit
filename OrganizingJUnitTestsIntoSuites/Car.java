@@ -1,4 +1,4 @@
-package OrganizingJUnitTestsIntoSuites.assertTrue;
+package OrganizingJUnitTestsIntoSuites;
 
 public class Car {
     String name;
