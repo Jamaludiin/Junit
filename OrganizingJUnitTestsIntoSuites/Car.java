@@ -36,4 +36,15 @@ public class Car {
         System.out.println("Name: " + name);
         System.out.println("Model: " + model);
     }
+
+    public void display3() {
+        // delay 2 seconds
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Name: " + name);
+        System.out.println("Model: " + model);
+    }
 }

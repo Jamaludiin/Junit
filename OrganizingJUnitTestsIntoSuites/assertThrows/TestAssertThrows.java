@@ -119,7 +119,4 @@ public void testIfCarConstructorAcceptDifferentDataTypeArguments3() {
 }
 
 
-
-
-
 }
