@@ -43,4 +43,12 @@ public class TestAssertNotSame {
         assertNotSame(car1, car2); // Passes because car1 and car2 refer to different instances
      
         }
+
+
+        @Test
+    public void testNotSame() {
+        String str1 = new String("JUnit");
+        String str2 = new String("JUnit");
+        assertNotSame(str1, str2); // Passes because they are different instances
+    }
 }
