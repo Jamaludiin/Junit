@@ -7,7 +7,10 @@ import org.junit.runner.notification.Failure;
 
 public class TestRunner {
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(TestMessageUtil.class);
+        Result result = JUnitCore.runClasses(
+            TestMessageUtil.class, 
+        TestJunit2.class, 
+        TestJunit4.class);
           
       for (Failure failure : result.getFailures()) {
          System.out.println(failure.toString());
