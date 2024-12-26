@@ -41,6 +41,21 @@ public class TestAssertSame {
         Car car1 = new Car("Toyota", "Camry");
         Car car2 = car1;
         assertSame(car1, car2); // Passes because car1 and car2 refer to the same instance
-    }
-       
+     
+        }
+
+        @Test
+        public void testIfCarObjectsAreSame2() {
+            Car car1 = new Car("Toyota", "Camry");
+            Car car2 = new Car("Toyota", "Camry");
+            assertSame(car1, car2); // Fails because car1 and car2 refer to different instances
+         
+            }
+
+        @Test
+        public void testIfObjectsAreSame() {
+            Object obj1 = new Object();
+            Car car1 = new Car();
+            assertSame(obj1, car1); // Fails because obj1 and car1 do not refer to the same instance
+        }
 }
