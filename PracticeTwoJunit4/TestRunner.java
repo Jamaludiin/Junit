@@ -16,6 +16,10 @@ public class TestRunner {
          System.out.println(failure.toString());
       }
 		
-      System.out.println(result.wasSuccessful());
+      // Print the total number of test cases run
+      System.out.println("Number of test cases run: " + result.getRunCount());
+
+      // Print if all tests were successful
+      System.out.println("All tests successful: " + result.wasSuccessful());
    }
 }  
