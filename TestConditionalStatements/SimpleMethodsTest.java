@@ -108,5 +108,15 @@ public class SimpleMethodsTest {
         assertTrue(Character.isDigit(simpleMethods.getScore()));
     }   
 
-    
+    // test if the score is in the range of 0 to 100
+    @Test
+    public void testGetScoreRange() {
+        simpleMethods = new SimpleMethods();
+        for (int i = 0; i < 101; i++) {
+            simpleMethods.setScore(i);
+            assertTrue(simpleMethods.getScore() >= 0 && simpleMethods.getScore() <= 100);
+        }
+        
+    }
+
 }
