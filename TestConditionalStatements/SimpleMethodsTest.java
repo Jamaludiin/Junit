@@ -89,4 +89,24 @@ public class SimpleMethodsTest {
         }
         
     }
+
+    // Test grade is a char type
+    @Test
+    public void testGetGradeType() {
+        simpleMethods = new SimpleMethods();
+        simpleMethods.setScore(95);
+        // test if the char is a letter using the Character class and the isLetter() method
+        assertTrue(Character.isLetter(simpleMethods.getGrade()));
+    }
+
+    // Test grade is an int type
+    @Test
+    public void testGetScoreType() {
+        simpleMethods = new SimpleMethods();
+        simpleMethods.setScore(95);
+        // test if the int is a number using the Integer class and the isNumber() method
+        assertTrue(Character.isDigit(simpleMethods.getScore()));
+    }   
+
+    
 }
