@@ -2,6 +2,8 @@ package TestConditionalStatements;
 
 import static org.junit.Assert.*;
 
+import java.lang.reflect.Type;
+
 import org.junit.Test;
 
 public class SimpleMethodsTest {
@@ -118,5 +120,16 @@ public class SimpleMethodsTest {
         }
         
     }
+
+    // test if the score is int type
+    @Test
+    public void testSetScoreType() {
+        simpleMethods = new SimpleMethods();
+        simpleMethods.setScore(95);
+        // test if the int is a number using the Integer class and the isNumber() method
+        assertTrue(Integer.class.isInstance(simpleMethods.getScore()));
+    }
+
+
 
 }

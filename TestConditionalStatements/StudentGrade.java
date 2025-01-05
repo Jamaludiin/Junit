@@ -11,7 +11,18 @@ public class StudentGrade {
     int score = 0;
     char grade = 'A';
 
-    char getGrade(int score) {
+    // set score
+    void setScore(int score) {
+        this.score = score;
+    }
+
+    // get score in int format
+    int getScore() {
+        return score;
+    }
+
+    // get score in char format
+    char getGrade() {
 
         if (score >= 90) {
             grade = 'A';
@@ -30,6 +41,7 @@ public class StudentGrade {
 
     public static void main(String[] args) {
         StudentGrade studentGrade = new StudentGrade();
-        System.out.println(studentGrade.getGrade(95));
+        studentGrade.setScore(95);
+        System.out.println(studentGrade.getGrade());
     }
 }
