@@ -24,6 +24,16 @@ public class CarTest {
         assertEquals(25000, car.getPrice(), 0.001);
     }
 
+    @Test
+    public void testToString() {
+        Car car = new Car("Toyota", "Camry", 2022, 25000);
+        assertEquals("Car{make='Toyota', model='Camry', year=2022, price=25000.0}", car.toString());
+        // this method returns a string representation of the object
+        // the test has failed, because the toString method returns a string representation of the object 
+    }
+
+    
+
   
 
     /*  Main method for debugging purposes

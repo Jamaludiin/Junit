@@ -62,6 +62,10 @@ public class Car {
         // TODO code application logic here
         Car car = new Car("Toyota", "Camry", 2022, 25000);
         System.out.println(car.toString());
+
+        Car car1 = new Car("Toyota", "Camry", 2022, 25000);
+        System.out.println(car1.toString());
+
         
     }
 }
