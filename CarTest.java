@@ -29,10 +29,19 @@ public class CarTest {
         Car car = new Car("Toyota", "Camry", 2022, 25000);
         assertEquals("Car{make='Toyota', model='Camry', year=2022, price=25000.0}", car.toString());
         // this method returns a string representation of the object
-        // the test has failed, because the toString method returns a string representation of the object 
+        // output Car: Toyota Camry 2022 25000.0
+        // the test has failed, because the toString method returns a string representation of the object
     }
 
     
+    @Test
+    public void testToStringAgain() {
+        Car car = new Car("Toyota", "Camry", 2022, 25000);
+        assertEquals("Car: Toyota Camry 2022 25000.0", car.toString());
+        // this method returns a string representation of the object
+        // Car: Toyota Camry 2022 25000.0
+        // the test has failed, because the toString method returns a string representation of the object 
+    }
 
   
 
